@@ -30,9 +30,6 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      * {
-        border: 1px dashed;
-      }
       .adlam-font {
         font-family: "ADLaM Display", serif;
       }
@@ -44,14 +41,14 @@
   <body class="">
     <nav class="bg-[#FFF9F4] shadow-xl">
       <div class="container lg:flex justify-between py-7 mx-auto">
-        <div class="flex justify-center gap-80 items-center">
+        <div class="flex justify-center gap-80 lg:gap-2 items-center">
           <img
             src="./Assignment_03_Category_0001/c1-assets/logo-header.png"
             alt=""
           />
-          <i class="fa-solid fa-bars lg:hidden"></i>
+          <i class="fa-solid fa-bars lg:hidden text-3xl"></i>
           <p
-            class="hidden lg:sora-font lg:text-black lg:font-normal lg:text-[26px]"
+            class="hidden lg:flex lg:sora-font lg:text-black lg:font-normal lg:text-[26px]"
           >
             Browse<span class="text-[#FFDC26]">4</span>Pets
           </p>
@@ -60,21 +57,21 @@
           <ul class="flex justify-center gap-8 items-center">
             <li>
               <a
-                class="hidden lg:font-normal text-[20px] sora-font text-black"
+                class="hidden lg:flex lg:font-normal text-[20px] sora-font text-black"
                 href=""
                 >Find a pet</a
               >
             </li>
             <li>
               <a
-                class="hidden lg:font-normal text-[20px] sora-font text-black"
+                class="hidden lg:flex lg:font-normal text-[20px] sora-font text-black"
                 href=""
                 >Breeds</a
               >
             </li>
             <li>
               <a
-                class="hidden font-normal text-[20px] sora-font text-black"
+                class="hidden lg:flex font-normal text-[20px] sora-font text-black"
                 href=""
                 >Contact us</a
               >
@@ -85,12 +82,12 @@
           <i class="fa-solid fa-magnifying-glass text-black sora-font"></i>
           <i class="fa-regular fa-bell text-black sora-font"></i
           ><button
-            class="hidden btn border-yellow-400 sora-font text-black rounded-xl px-8 bg-none"
+            class="hidden lg:flex btn border-yellow-400 sora-font text-black rounded-xl px-8 bg-none"
           >
             Login
           </button>
           <button
-            class="hidden rounded-xl bg-[#FFDC26] text-black sora-font py-2 px-5"
+            class="hidden lg:flex rounded-xl bg-[#FFDC26] text-black sora-font py-2 px-5"
           >
             Register
           </button>
@@ -110,134 +107,135 @@
               class="text-[#111111] font-normal sora-font leading-9 text-[16px] lg:text-[20px]"
             >
               Discover a world of treats, toys, and essentials handpicked for
+              <br class="hidden lg:block" />
               your furry friends. Shop now and make tails wag with joy!
             </p>
             <br />
             <button
-              class="rounded-xl bg-[#FFDC26] text-black sora-font py-2 px-5"
+              class="rounded-xl bg-[#FFDC26] text-black sora-font py-2 px-5 z-[7000]"
             >
               Find a pet
             </button>
           </div>
-          <div class="pb-12 pr-10">
+          <div class="absolute top-[360px] lg:right-0 lg:top-52">
             <img
-              class="absolute w-[400px] pr-10"
+              class="w-[300px] pr-10 lg:w-[1100px]"
               src="./Assignment_03_Category_0001/c1-assets/cat-big.png"
               alt=""
             />
           </div>
         </div>
       </section>
-       <div class="carousel">
-      <div
-        id="slide1"
-        class="carousel-item relative w-full justify-center items-center flex"
-      >
+      <div class="carousel my-0">
         <div
-          class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
+          id="slide1"
+          class="carousel-item relative w-full justify-center items-center flex"
         >
-          <p class="lg:lg:text-6xl text-2xl font-bold">Buy Pet</p>
-          <p class="text-base lg:text-2xl font-semibold">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Numquam inventore, voluptates doloribus <br />
-            vero quis eos error eum quia dignissimos, sapiente assumenda, sed
-            facilis.
-          </p>
-          <button class="btn bg-orange-400 text-white">See more</button>
+          <div
+            class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
+          >
+            <p class="lg:lg:text-6xl text-2xl font-bold">Buy Pet</p>
+            <p class="text-base lg:text-2xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Numquam inventore, voluptates doloribus <br />
+              vero quis eos error eum quia dignissimos, sapiente assumenda, sed
+              facilis.
+            </p>
+            <button class="btn bg-orange-400 text-white">See more</button>
+          </div>
+          <img
+            src="https://images5.alphacoders.com/452/452950.jpg"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
-        <img
-          src="https://images5.alphacoders.com/452/452950.jpg"
-          class="w-full h-full"
-        />
         <div
-          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          id="slide2"
+          class="carousel-item relative w-full justify-center items-center flex"
         >
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+          <div
+            class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
+          >
+            <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
+            <p class="text-base lg:text-2xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Numquam inventore, voluptates doloribus <br />
+              vero quis eos error eum quia dignissimos, sapiente assumenda, sed
+              facilis.
+            </p>
+            <button class="btn bg-orange-400 text-white">See more</button>
+          </div>
+          <img
+            src="https://c0.wallpaperflare.com/preview/227/1011/791/two-guinea-pigs-eating-cheese.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div
+          id="slide3"
+          class="carousel-item relative w-full justify-center items-center flex"
+        >
+          <div
+            class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
+          >
+            <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
+            <p class="text-base lg:text-2xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Numquam inventore, voluptates doloribus <br />
+              vero quis eos error eum quia dignissimos, sapiente assumenda, sed
+              facilis.
+            </p>
+            <button class="btn bg-orange-400 text-white">See more</button>
+          </div>
+          <img
+            src="https://images5.alphacoders.com/599/599101.jpg"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div
+          id="slide4"
+          class="carousel-item relative w-full justify-center items-center flex"
+        >
+          <div
+            class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
+          >
+            <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
+            <p class="text-base lg:text-2xl font-semibold">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Numquam inventore, voluptates doloribus <br />
+              vero quis eos error eum quia dignissimos, sapiente assumenda, sed
+              facilis.
+            </p>
+            <button class="btn bg-orange-400 text-white">See more</button>
+          </div>
+          <img
+            src="https://img.freepik.com/free-photo/close-up-kitten-exploring-nature_23-2150782371.jpg?t=st=1738417087~exp=1738420687~hmac=069563ebadc2afbdce6383a30e8393819c6f930fe95adaaea2a9e2e7d38bbc2e&w=2000"
+            class="w-full h-full"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
-      <div
-        id="slide2"
-        class="carousel-item relative w-full justify-center items-center flex"
-      >
-        <div
-          class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
-        >
-          <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
-          <p class="text-base lg:text-2xl font-semibold">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Numquam inventore, voluptates doloribus <br />
-            vero quis eos error eum quia dignissimos, sapiente assumenda, sed
-            facilis.
-          </p>
-          <button class="btn bg-orange-400 text-white">See more</button>
-        </div>
-        <img
-          src="https://c0.wallpaperflare.com/preview/227/1011/791/two-guinea-pigs-eating-cheese.jpg"
-          class="w-full"
-        />
-        <div
-          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-        >
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div
-        id="slide3"
-        class="carousel-item relative w-full justify-center items-center flex"
-      >
-        <div
-          class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
-        >
-          <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
-          <p class="text-base lg:text-2xl font-semibold">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Numquam inventore, voluptates doloribus <br />
-            vero quis eos error eum quia dignissimos, sapiente assumenda, sed
-            facilis.
-          </p>
-          <button class="btn bg-orange-400 text-white">See more</button>
-        </div>
-        <img
-          src="https://images5.alphacoders.com/599/599101.jpg"
-          class="w-full h-full"
-        />
-        <div
-          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-        >
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div
-        id="slide4"
-        class="carousel-item relative w-full justify-center items-center flex"
-      >
-        <div
-          class="absolute scale-[0.5] lg:scale-100 bg-white/[0.5] p-6 rounded-md space-y-6 backdrop-blur-sm"
-        >
-          <p class="lg:text-6xl text-2xl font-bold">Buy Pet</p>
-          <p class="text-base lg:text-2xl font-semibold">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Numquam inventore, voluptates doloribus <br />
-            vero quis eos error eum quia dignissimos, sapiente assumenda, sed
-            facilis.
-          </p>
-          <button class="btn bg-orange-400 text-white">See more</button>
-        </div>
-        <img
-          src="https://img.freepik.com/free-photo/close-up-kitten-exploring-nature_23-2150782371.jpg?t=st=1738417087~exp=1738420687~hmac=069563ebadc2afbdce6383a30e8393819c6f930fe95adaaea2a9e2e7d38bbc2e&w=2000"
-          class="w-full h-full"
-        />
-        <div
-          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-        >
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-    </div>
       <section>
         <p
           class="text-black adlam-font text-[24px] lg:text-[56px] container mx-auto mt-3 mb-3 lg:mt-8"
@@ -411,7 +409,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/fish-cartoon.png"
                   alt=""
                 />
               </div>
@@ -441,7 +439,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/mouse-cartoon.png"
                   alt=""
                 />
               </div>
@@ -471,7 +469,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png"
                   alt=""
                 />
               </div>
@@ -501,7 +499,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/cat-cartoon.png"
                   alt=""
                 />
               </div>
@@ -531,7 +529,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/fish-cartoon.png"
                   alt=""
                 />
               </div>
@@ -561,7 +559,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png"
                   alt=""
                 />
               </div>
@@ -621,7 +619,7 @@
               >
                 <img
                   class=""
-                  src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                  src="./Assignment_03_Category_0001/c1-assets/fish-cartoon.png"
                   alt=""
                 />
               </div>
@@ -648,15 +646,16 @@
       <!-- dog-section -->
       <section class="mb-72">
         <p
-          class="font-normal text-black text-[24px] lg:text-[36px] adlam-font mb-6"
+          class="font-normal text-black text-[24px] lg:text-[56px] adlam-font mb-6"
         >
           Everyday low Price
         </p>
-        <div>
+        <div class="lg:flex lg:justify-center lg:gap-3 space-y-6">
+          <!-- left -->
           <div
-            class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl flex justify-center items-center relative pb-72"
+            class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-full rounded-xl flex justify-center items-center relative pb-72 lg:pb-0 lg:px-9"
           >
-            <div class="mt-7 mr-28">
+            <div class="mt-7 mr-28 lg:mr-0">
               <p
                 class="hidden lg:flex lg:sora-font lg:text-[20px] lg:text-black"
               >
@@ -678,15 +677,18 @@
                 $7.99
               </h2>
             </div>
-            <div class="w-2/3 absolute top-16 left-36">
+            <div
+              class="w-2/3 lg:w-auto absolute lg:relative top-16 lg:top-0 left-36 lg:left-0"
+            >
               <img
                 src="./Assignment_03_Category_0001/c1-assets/cute-dog-mid.png"
                 alt=""
               />
             </div>
           </div>
+          <!-- right  -->
           <div
-            class="flex justify-center items-center rounded-xl bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] relative pb-72"
+            class="flex justify-center items-center rounded-xl bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] relative pb-72 lg:pb-0 lg:w-full lg:px-6"
           >
             <div class="mt-7 mr-32">
               <h5 class="text-[23px] lg:text-[32px] adlam-font font-normal">
@@ -694,7 +696,9 @@
               </h5>
               <p class="text-[40px] lg:text-[56px] text-[#FFDC26]">$7.99</p>
             </div>
-            <div class="absolute top-20 w-3/5 left-40 pb-6">
+            <div
+              class="absolute top-20 w-3/5 left-40 pb-6 lg:relative lg:left-0 lg:top-0 lg:pb-0 lg:px-6"
+            >
               <img
                 src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
                 alt=""
@@ -706,12 +710,14 @@
 
       <!-- absolute section -->
       <section class="flex justify-center items-center w-full relative">
-        <div class="absolute rounded-xl z-10 bottom-[-320px]">
+        <div class="absolute rounded-xl z-10 bottom-[-320px] lg:w-[1480px]">
           <!-- last-section -->
-          <div class="grid grid-cols-1 bg-[#FFF9F4] rounded-xl lg:flex">
+          <div
+            class="grid grid-cols-1 bg-[#FFF9F4] rounded-xl lg:flex lg:justify-evenly lg:h-[400px]"
+          >
             <div class="flex justify-center items-center py-5">
               <img
-                class="w-2/4"
+                class="w-2/4 lg:w-full"
                 src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png"
                 alt=""
               />
@@ -747,7 +753,7 @@
 
     <!-- footer -->
     <footer
-      class="footer bg-base-300 text-base-content p-10 bg-[#FFDC26]/[0.5] rounded-xl relative pt-[400px]"
+      class="footer bg-base-300 text-base-content p-10 bg-[#FFDC26]/[0.5] rounded-xl relative pt-[400px] lg:flex lg:justify-evenly lg:px-64 lg:pb-16 lg:items-center"
     >
       <nav>
         <div class="flex items-center gap-5">
@@ -755,19 +761,24 @@
             src="./Assignment_03_Category_0001/c1-assets/logo-footer.png"
             alt=""
           />
-          <p class="sora-font text-black font-normal text-[20px]">
+          <p class="sora-font text-black font-normal text-[20px] lg:xl">
             Browse<span class="text-[#FFDC26]">4</span>Pets
           </p>
         </div>
-        <h6 class="footer-title">
-          Discover a world of treats, toys, and essentials handpicked for your
-          furry friends
+        <h6 class="footer-title lg:text-xl sora-font">
+          Discover a world of treats, toys, and <br class="hidden lg:block" />
+          essentials handpicked for your furry <br class="hidden lg:block" />
+          friends
         </h6>
       </nav>
       <nav>
-        <a class="link link-hover text-[16px] sora-font">Find a pet</a>
-        <a class="link link-hover text-[16px] sora-font">Breeds</a>
-        <a class="link link-hover text-[16px] sora-font">Contact us</a>
+        <a class="link link-hover text-[16px] sora-font lg:text-xl"
+          >Find a pet</a
+        >
+        <a class="link link-hover text-[16px] sora-font lg:text-xl">Breeds</a>
+        <a class="link link-hover text-[16px] sora-font lg:text-xl"
+          >Contact us</a
+        >
       </nav>
       <nav>
         <h6 class="footer-title text-[16px] sora-font text-black">Follow us</h6>
@@ -784,9 +795,10 @@
       </nav>
     </footer>
   </body>
-  <style>
-    * {
-      border: 1px dashed;
-    }
-  </style>
 </html>
+
+<!-- 
+
+repo : https://github.com/rifatalam240/assignment-3
+
+site : https://rifatalam240.github.io/assignment-3/ -->
